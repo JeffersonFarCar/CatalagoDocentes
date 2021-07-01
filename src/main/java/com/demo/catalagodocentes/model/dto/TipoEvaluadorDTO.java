@@ -15,8 +15,6 @@ import javax.validation.constraints.Positive;
 @NoArgsConstructor
 public class TipoEvaluadorDTO {
     @NotNull
-    @Positive
     private Long idTipo;
-    @NotNull
     private String descripcion;
 }

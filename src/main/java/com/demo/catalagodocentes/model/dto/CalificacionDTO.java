@@ -14,13 +14,12 @@ import javax.validation.constraints.Positive;
 @AllArgsConstructor
 @NoArgsConstructor
 public class CalificacionDTO {
-    @NotBlank
-    @Positive
+    @NotNull
     private Long idC;
-    @NotBlank
+    @NotNull
     private EvaluacionDTO evaluacionDTO;
-    @NotBlank
+    @NotNull
     private EvaluadorDTO evaluadorDTO;
-    @NotBlank
+    @NotNull
     private Integer nota;
 }

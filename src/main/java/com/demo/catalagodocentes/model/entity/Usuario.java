@@ -13,6 +13,7 @@ import javax.validation.constraints.NotBlank;
 @NoArgsConstructor
 public class Usuario {
     @Id
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long idUsuario;
     private String nombre;
     private String apellido;

@@ -13,6 +13,7 @@ import javax.validation.constraints.NotBlank;
 @NoArgsConstructor
 public class Calificacion {
     @Id
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long idC;
     @ManyToOne(optional = false, cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private  Evaluacion evaluacion;

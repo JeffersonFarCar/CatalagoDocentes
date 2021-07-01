@@ -17,7 +17,6 @@ import javax.validation.constraints.Positive;
 @NoArgsConstructor
 public class PostulanteDTO {
     @NotNull
-    @Positive
     private Long idPostulante;
     @NotNull
     private UsuarioDTO usuarioDTO;

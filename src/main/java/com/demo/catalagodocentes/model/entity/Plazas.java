@@ -13,6 +13,7 @@ import javax.validation.constraints.NotBlank;
 @NoArgsConstructor
 public class Plazas {
     @Id
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long idPlaza;
     @ManyToOne(optional = false, cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private Postulante postulante;
